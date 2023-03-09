@@ -1,4 +1,4 @@
-theme: minima
+theme: jekyll-theme-midnight
 title: "ABOPSC frontend"
 description: "Data Structures 2"
 gitorg: "https://github.com/dontran15/frontend-abopsc"
