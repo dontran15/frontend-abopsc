@@ -4,6 +4,6 @@ plugins:
 title: "ABOPSC frontend"
 description: "Data Structures 2"
 gitorg: "https://github.com/dontran15/frontend-abopsc"
-url: https://dontran15.github.io
-baseurl: /frontend-abopsc
+url: http://127.0.0.1:4000
+baseurl:
 
