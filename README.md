@@ -1,4 +1,6 @@
-## The Reunion Project
+## ABOPSC
+
+Github pages frontend for Team ABOPSC.
 
 Usage
 
