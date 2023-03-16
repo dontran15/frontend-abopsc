@@ -13,7 +13,6 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-gem "github-pages", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
 
 gem "webrick", "~> 1.7"
