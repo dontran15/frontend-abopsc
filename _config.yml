@@ -1,6 +1,8 @@
 remote_theme: mmistakes/minimal-mistakes
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-include-cache
+
 title: "ABOPSC frontend"
 description: "Data Structures 2"
 gitorg: "https://github.com/dontran15/frontend-abopsc"
@@ -8,4 +10,3 @@ gitorg: "https://github.com/dontran15/frontend-abopsc"
 # Site URL
 url: https://dontran15.github.io
 baseurl: /frontend-abopsc
-
