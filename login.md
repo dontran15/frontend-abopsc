@@ -44,7 +44,7 @@
 
             alert("Logged in");
             console.log(response);
-            window.location.href = "/home";
+            window.location.href = "/";
         })
 
 
