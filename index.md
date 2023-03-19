@@ -1,5 +1,4 @@
 <!Doctype html>
-<html>
 <style>
 .btn-group button {
   background-color: #D3D3D3; /* Green background */
@@ -36,6 +35,5 @@
   <button>Lab Work</button>
   <button>Scoring </button>
 </div>
-
 </body>
 </html>
