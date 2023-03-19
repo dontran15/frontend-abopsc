@@ -27,9 +27,6 @@
 }
 </style>
 <body>
-
-<h1>ABopsC Home Page</h1>
-
 <div class="btn-group">
   <button>Lesson  </button>
   <button>Lab Work</button>
