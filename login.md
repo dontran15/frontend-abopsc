@@ -1,4 +1,7 @@
-## Login
+---
+title: login
+layout: single
+---
 
 <table>
     <tr>
