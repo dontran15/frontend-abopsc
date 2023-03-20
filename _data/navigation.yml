@@ -3,7 +3,7 @@ main:
   - title: "Meow"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Login"
-    url: /login/
+    url: login.html
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
