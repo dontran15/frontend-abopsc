@@ -290,3 +290,8 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Convert jupyter notebook to jekyll md post through github actions
+- name: Jupyter Minimal Mistakes
+  uses: ptmerz/jupyter-minimal-mistakes@v1.0.0
+
