@@ -16,7 +16,6 @@ permalink: /login/
         <td><button type="submit" value="Submit" onclick="login_user()">Submit</button></td>
     <tr>
     </tr>
-</table>
 
 <script>
 
