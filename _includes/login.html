@@ -1,23 +1,29 @@
----
-title: login
-layout: single
-permalink: /login/
----
-
-<table>
-    <tr>
-        <th>Username</th>
-        <th><input type="text" id="username" name="username"></th>
-    </tr>
-        <th>Password</th>
-        <th><input type="text" id="password" name="password">
-    <tr>
-    </tr>
-        <td><button type="submit" value="Submit" onclick="login_user()">Submit</button></td>
-    <tr>
-    </tr>
+<div id="login" class="userAuth">
+    <h1>Login</h1>
+    <table id>
+        <tr>
+            <th>Username</th>
+            <th><input type="text" id="username" name="username" placeholder="enter a username..."></th>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <th><input type="text" id="password" name="password" placeholder="enter a password..."></th>
+        </tr>
+        <tr>
+            <th><button class="btn" type="submit" value="Submit" onclick="login_user()">Submit</button></th>
+        </tr>
+        <tr>
+            <th> Or <a onclick="signUpPage()">sign up</a> instead.</th>
+        </tr>
+    </table>
+</div>
 
 <script>
+    // show login, hide signup
+    function signUpPage() {
+        document.getElementById("signup").style.display = "";
+        document.getElementById("login").style.display = "none";
+    }
 
     // Replace with domain and api call of backend
     url = ""

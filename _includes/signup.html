@@ -1,0 +1,65 @@
+<div id="signup" style="display:none" class="userAuth">
+    <h1>Sign Up</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th><input type="text" id="username" name="username"></th>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <th><input type="text" id="password" name="password"></th>
+        </tr>
+        <tr>
+            <th>Confirm Password</th>
+            <th><input type="text" id="password" name="password"></th>
+        </tr>
+        <tr>
+            <th><button class="btn" type="submit" value="Submit" onclick="signup_user()">Submit</button></th>
+        </tr>
+        <tr>
+            <th> Or <a onclick="loginPage()">login</a> instead.</th>
+        </tr>
+    </table>
+</div>
+
+<script>
+    // show login, hide signup
+    function loginPage() {
+        document.getElementById("signup").style.display = "none";
+        document.getElementById("login").style.display = "";
+    }
+
+    // Replace with domain and api call of backend
+    url = ""
+
+    function signup_user() { // this is copied from login and needs change
+        const body = {
+            username: document.getElementById("username"),
+            password: document.getElementById("password")
+        };
+
+        const request_options = {
+            method: "POST",
+            mode: "cors",
+            cache: "no-cache",
+            credentials: "include",
+            body: JSON.stringify(body),
+            headers: {
+                "content-type" : "application/json"
+            }
+        };
+
+        fetch(url, request_options).then(response => {
+            if (response.status != 200) {
+                alert("Error ocurred: Check username and password");
+                return;
+            }
+
+            alert("Logged in");
+            console.log(response);
+            window.location.href = "/";
+        })
+
+
+    }
+</script>
