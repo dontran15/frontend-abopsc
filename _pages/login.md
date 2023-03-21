@@ -1,7 +1,7 @@
 ---
 title: login
 layout: single
-permalink: /login
+permalink: /login/
 ---
 
 <table>
