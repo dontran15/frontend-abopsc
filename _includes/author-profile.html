@@ -49,14 +49,14 @@
       {% endif %}
 
       {% if author.github %}
-        {% for user in author.github %}
+      <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+      <span class="label">Contributors</span>
+        {% for link in author.github %}
           <li>
-            <a href="https://github.com/"{{ user }} itemprop="sameAs" rel="nofollow noopener noreferrer me">
-              <i class="fab fa-fw fa-github" aria-hidden="true"></i>
-              <span class="label">{{ user }}<span>
+            <a href="https://github.com/{{ link.user }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+              <span class="label">{{ link.user }}<span> <br>
             </a>
           </li>
-
         {% endfor %}
       {% endif %}
 

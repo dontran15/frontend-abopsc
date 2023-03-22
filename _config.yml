@@ -104,12 +104,23 @@ analytics:
 
 # Site Author
 author:
-  name             : "ABOPSC"
+  name             : #
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "We are a group."
+  bio              : #
   github:
+    - user: "xu-ellen"
+    - user: "Nathanshih04"
+    - user: "NinjaBreadLord"
+    - user: "rohitd3"
+    - user: "horizon-ab"
+    - user: "AD1616"
+    - user: "Samuelwaang"
+    - user: "iriis"
+    - user: "hetvit27"
     - user: "deimie"
     - user: "dontran15"
+    - user: "peacekeeper6"
+
 
 # Site Footer
 footer:
