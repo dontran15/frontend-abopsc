@@ -17,11 +17,34 @@ permalink: /scores/
 </body>
 
 <script>
+    // put all scores and names in this array (order Z at top, A at bottom)
     let people = [
-        ["Name","Lab Score (Peer)","Lesson Score (Peer)","Lab Score (Live)","Lab Score (Live)","Total"],
-        ["Evan S.","/2","/1","/2","/1","/3"]
+        ["name","peerLab","peerLesson","liveLab","liveLesson","total"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"],
+        ["","/2","/1","/2","/1","/3"]
+
     ]
 
+    // iterates through array and creates tr's and td's for each index
     function makeTableHTML(people) {
         var result = "<table>";
         result += "<thead><tr><th>Name</th><th>Lab Score (Peer)</th><th>Lesson Score (Peer)</th><th>Lab Score (Live)</th><th>Lab Score (Live)</th><th>Total</th></thead><tbody>";
@@ -40,5 +63,3 @@ permalink: /scores/
     makeTableHTML(people);
 
 </script>
-
-<style href="_sass/minimal-mistakes/_tables.scss"></style>
