@@ -28,34 +28,45 @@
     // Replace with domain and api call of backend
     url = ""
 
-    function login_user() {
-        const body = {
-            username: document.getElementById("username"),
-            password: document.getElementById("password")
-        };
+function login_user() {
+  const email = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-        const request_options = {
-            method: "POST",
-            mode: "cors",
-            cache: "no-cache",
-            credentials: "include",
-            body: JSON.stringify(body),
-            headers: {
-                "content-type" : "application/json"
-            }
-        };
-
-        fetch(url, request_options).then(response => {
-            if (response.status != 200) {
-                alert("Error ocurred: Check username and password");
-                return;
-            }
-
-            alert("Logged in");
-            console.log(response);
-            window.location.href = "/";
-        })
+  const url = "https://abopsc-backend.dontntntnt.de/authenticate";
+  
+  const options = {
+    method: 'POST', 
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'include', // include, *same-origin, omit
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        "email" : email,
+        "password" : password
+    })
+  };
 
 
-    }
+  // Fetch JWT
+  fetch(url, options)
+  .then(response => {
+      // trap error response from Web API
+      if (!response.ok) {
+          const errorMsg = 'Login error: ' + response.status;
+          console.log(errorMsg);
+          return; 
+      }
+      // Success!!!
+      // Redirect to Database location
+
+      var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+      
+  })
+
+}
 </script>
