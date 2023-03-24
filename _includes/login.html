@@ -7,7 +7,7 @@
         </tr>
         <tr>
             <th>Password</th>
-            <th><input type="text" id="password" name="password" placeholder="enter your password..."></th>
+            <th><input type="text" id="pswd" name="pswd" placeholder="enter your password..."></th>
         </tr>
         <tr>
             <th><button class="btn" type="submit" value="Submit" onclick="login_user()">Submit</button></th>
@@ -25,12 +25,9 @@
         document.getElementById("login").style.display = "none";
     }
 
-    // Replace with domain and api call of backend
-    url = ""
-
 function login_user() {
-  const email = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("pswd").value;
 
   const url = "https://abopsc-backend.dontntntnt.de/authenticate";
   
@@ -43,7 +40,7 @@ function login_user() {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        "email" : email,
+        "username" : username,
         "password" : password
     })
   };
