@@ -43,8 +43,8 @@ function login_user() {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        "username" : username,
-        "password" : password
+        username : document.getElementById("username").value,
+        password : document.getElementById("pswd").value,
     })
   };
 
