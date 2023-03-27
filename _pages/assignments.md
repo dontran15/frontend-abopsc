@@ -7,5 +7,5 @@ permalink: /assignments/
 
 ## Assignments
 
-1. [Assignment 1](frontend-abopsc/grading/)
+1. [Assignment 1]({{site.baseurl}}/grading/)
 2. [Assignment 2]()
