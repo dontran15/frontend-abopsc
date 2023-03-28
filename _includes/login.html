@@ -3,11 +3,11 @@
     <table id>
         <tr>
             <th>Username</th>
-            <th><input type="text" id="username" name="username" placeholder="enter your username..."></th>
+            <th><input autocomplete="off" type="email" id="username" name="username" placeholder="enter your username..."></th>
         </tr>
         <tr>
             <th>Password</th>
-            <th><input type="text" id="pswd" name="pswd" placeholder="enter your password..."></th>
+            <th><input autocomplete="off" type="password" id="pswd" name="pswd" placeholder="enter your password..."></th>
         </tr>
         <tr>
             <th><button class="btn" type="submit" value="Submit" onclick="login_user()">Submit</button></th>
@@ -29,6 +29,9 @@ function login_user() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("pswd").value;
 
+  console.log(username);
+  console.log(password);
+
   const url = "https://abopsc-backend.dontntntnt.de/authenticate/";
   
   const options = {
@@ -40,8 +43,8 @@ function login_user() {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        "username" : username,
-        "password" : password
+        email : document.getElementById("username").value,
+        password : document.getElementById("pswd").value,
     })
   };
 
@@ -58,10 +61,10 @@ function login_user() {
       // Success!!!
       // Redirect to Database location
 
-      var requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-      };
+    //   var requestOptions = {
+    //     method: 'GET',
+    //     redirect: 'follow'
+    //   };
       
   })
 

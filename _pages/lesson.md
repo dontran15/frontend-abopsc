@@ -6,12 +6,24 @@ permalink: /lesson/
 
 {% include lab_nav.html %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna eu nulla tempor varius. Praesent ut tempus eros. Maecenas augue neque, auctor eget iaculis id, bibendum nec justo. Vestibulum varius placerat metus, quis vehicula ligula viverra vel. Sed rutrum, nulla in congue rutrum, turpis velit vehicula enim, a interdum metus ipsum at arcu. Proin quis suscipit risus. Mauris vel eros arcu.
+## Setup 
+- Units 1-4 are roughly half of the exam
+- The best way to learn it is through code flow which means integrating all key concepts into a code that you build upon 
+- Start with the scavenger hunt quiz
 
-Suspendisse tortor orci, viverra et turpis non, molestie malesuada enim. Donec velit sem, feugiat et elementum ut, scelerisque consequat erat. Donec a libero finibus, venenatis eros vel, luctus massa. Pellentesque faucibus varius auctor. Curabitur a justo sed ligula consequat pulvinar. Nullam sed est facilisis, ultrices nisl vel, pellentesque felis. Donec auctor ultrices urna, eu porta odio mollis vel. Vivamus ex justo, tincidunt vel maximus vel, condimentum eget quam.
+## Lesson
+### Unit 1
+- You are a teenager who has their license and wants to find a car to buy. When you go to the car dealership, you realize that there are many different things you have to keep track of. You have to keep track of the car brands you look at, the prices of the cars, phone numbers of different sales representatives, etc. To make it easy on yourself, you want to develop a computerized code that is able to sort through different prices, car brands, etc. The first step to doing this is through storing these different variables just mentioned as data types - primitive data types. You use variables to store data in Java. 
+- For example, the price of a car can be stored as a double. The car brands you look and phone numbers can be strings. If you want to store whether you like a car or not, you can store that information as a boolean data type. 
+- Now that you have data and variables declared, you can also compare prices of different cars through expressions and assignment statements. There are operators like the modulo operator where the remainder is computed or there's division and multiplication. If you ever want to compare car prices, you can set up a code with scanner input which is also a very common with consoles.
+- Start Hack 1.
+### Unit 2
+- Now that Hack 1 we have practically covered Unit 1 of AP computer science that involves primitive data types and operators (both simple and compound)
+- When you want to characterize all the cars, you can create a class or a template that basically defines what an object is like and what the object can do
+- When it comes to cars, you can create a class for what the car is like. The class Cars can have variables like String brand, int age, double mpg. With these parameters, you can create an actual object. 
+Car honda = new Car ("Honda," "10," "54.6") --> constructor
+- Inside the parantheses --> parameters which are values passed
+- Car (String brand, int age, double mpg)
+- If you want to overload a constructor, you can have the same characteristics but different order of variables. For example, Car (double mpg, String brand, int age)
+- 
 
-Mauris scelerisque, dolor et scelerisque feugiat, risus eros mattis turpis, ut pellentesque erat quam nec velit. Integer interdum viverra lectus et viverra. Sed mattis in augue sed feugiat. Integer suscipit lorem in blandit varius. Nulla tempus nec tellus ac pulvinar. In sollicitudin sem in ante pulvinar, rutrum scelerisque libero dapibus. Donec id tristique mauris. Sed pulvinar ornare nibh, quis pharetra arcu pharetra at. Suspendisse potenti.
-
-Cras a nunc eget metus interdum posuere a a ante. Sed ac nibh eu erat rhoncus sollicitudin nec vitae nisl. Donec eleifend fringilla nunc, vel semper nisi porttitor at. Proin lacinia dolor blandit nibh congue placerat. Sed rutrum vitae orci vitae aliquet. Integer scelerisque nisl nec elementum maximus. Ut non est et odio placerat eleifend. Mauris purus ex, placerat id nulla id, dictum tincidunt risus. Integer massa lacus, ornare sit amet gravida tincidunt, pharetra id ex.
-
-Nulla venenatis dui nec erat elementum finibus. Fusce aliquam efficitur pharetra. Maecenas dolor tortor, venenatis eget mi eget, vulputate molestie ipsum. Integer congue eros justo, sit amet tempor felis tempor ut. Maecenas fringilla, erat a fermentum fringilla, tortor sem tincidunt dui, id ultrices arcu urna id nisl. Maecenas quis lectus lorem. Aliquam erat volutpat. Integer hendrerit, eros non viverra fringilla, risus justo ornare lacus, at efficitur nibh lectus sit amet quam. Pellentesque consequat odio sed turpis semper fermentum. Nam lacinia porta diam, sit amet commodo augue ullamcorper dapibus. Vestibulum laoreet fermentum tristique. Morbi in enim dignissim, commodo tortor sed, fermentum eros. Nullam euismod molestie varius. Aliquam vitae suscipit mauris, sed ullamcorper nisi.
