@@ -1,6 +1,6 @@
 ---
 title: Lab Scores
-layout: single
+layout: singleWide
 permalink: /scores/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Labs
-layout: single
+layout: singleWide
 permalink: /labs/
 ---
 

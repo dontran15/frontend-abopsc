@@ -1,6 +1,6 @@
 ---
 title: Lesson
-layout: lesson
+layout: singleWide
 permalink: /lesson/
 ---
 
