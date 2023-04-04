@@ -22,8 +22,12 @@ permalink: /lesson/
 - When you want to characterize all the cars, you can create a class or a template that basically defines what an object is like and what the object can do
 - When it comes to cars, you can create a class for what the car is like. The class Cars can have variables like String brand, int age, double mpg. With these parameters, you can create an actual object. 
 Car honda = new Car ("Honda," "10," "54.6") --> constructor
-- Inside the parantheses --> parameters which are values passed
+- Inside the parentheses --> parameters which are values passed
 - Car (String brand, int age, double mpg)
 - If you want to overload a constructor, you can have the same characteristics but different order of variables. For example, Car (double mpg, String brand, int age)
-- 
+### Unit 3
+- Now that we understand the characteristics of each car, it is time to make a purchase. One of the most important considerations is price.
+- We can use conditional statements to eliminate cars without the chosen characteristics. If statements only run if the given condition is true. For example, if you only want black cars you can use the if statement to filter for that and only keep the car in consideration if color=black. Additionally, we can use if statements to find the cheapest car that fits all the chosen characteristics, or only show certain cars if they are within a certain price range.
+### Unit 4
+- While loops keep repeating the code as long as a condition is true. while (i < numberOfRepetitions) { do something i++; }. The while loop can be used to check every single car in consideration to see if it fits all the criteria. It will go through every single car in the list and then you can add a nested if statement that checks if the criteria is met. With the while loop, all the cars can be checked. 
 
