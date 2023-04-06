@@ -16,9 +16,11 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border-width: 0;
+  border: #343941 solid 1px;
   border-radius: $border-radius;
   cursor: pointer;
+  background-color: #21262e;
+  color:#adb4bc;
 
   .icon {
     margin-right: 0.5em;
@@ -97,6 +99,6 @@
 }
 
 .btn:hover {
-  background-color: #32a885;
-  color: white;
+  background-color: #30363e;
+  border: #8b949e solid 1px;
 }
