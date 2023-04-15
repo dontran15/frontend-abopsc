@@ -66,7 +66,7 @@ function login_user() {
         redirect: 'follow'
       };
 
-      fetch("https://abopsc-backend.dontntntnt.de/api/person/getPersonName?email=s" + email, requestOptions)
+      fetch("https://abopsc-backend.dontntntnt.de/api/person/getPersonName?email=s" + username, requestOptions)
         .then(response => response.text())
         .then(text => {
           console.log(text);
@@ -79,7 +79,7 @@ function login_user() {
 
         let authorized = false;
 
-        fetch('https://abopsc-backend.dontntntnt.de/api/person/getPersonRoles?email=' + email, requestOptions)
+        fetch('https://abopsc-backend.dontntntnt.de/api/person/getPersonRoles?email=' + username, requestOptions)
             .then(response => response.json())
             .then(data => {
             for (const item of data) {
