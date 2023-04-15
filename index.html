@@ -1,7 +1,22 @@
 ---
 layout: home
-title: Home
 author_profile: true
 ---
+
+
+<h1>
+    <div id="user"></div>
+    <duv id="authorized"></duv>
+</h1>
+<script>
+    if (sessionStorage.getItem("username") == null) {
+        sessionStorage.setItem("username", "Guest");
+    }
+    if (sessionStorage.getItem("authorized") == null) {
+        sessionStorage.setItem("authorized", false);
+    }
+    document.getElementById("user").innerHTML = "Hello " + sessionStorage.getItem("username") + "!";
+    document.getElementById("authorized").innerHTML = "Authorized: " + sessionStorage.getItem("authorized");
+</script>
 
 {% include lab_nav.html %}

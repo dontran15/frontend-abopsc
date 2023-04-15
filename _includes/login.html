@@ -61,12 +61,52 @@ function login_user() {
       // Success!!!
       // Redirect to Database location
 
-    //   var requestOptions = {
-    //     method: 'GET',
-    //     redirect: 'follow'
-    //   };
+      var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+
+      fetch("https://abopsc-backend.dontntntnt.de/api/person/getPersonName?email=s" + email, requestOptions)
+        .then(response => response.text())
+        .then(text => {
+          console.log(text);
+          sessionStorage.setItem("email", username);
+          sessionStorage.setItem("username", text);
+          
+          window.location.href = "{{site.baseurl}}/";
+        })
+        .catch(error => console.log('error', error));
+
+        let authorized = false;
+
+        fetch('https://abopsc-backend.dontntntnt.de/api/person/getPersonRoles?email=' + email, requestOptions)
+            .then(response => response.json())
+            .then(data => {
+            for (const item of data) {
+                console.log(item["name"]);
+                if (item["name"] == "ROLE_ADMIN" || item["name"] == "ROLE_USER") {
+                    authorized = true;
+                }
+            }
+            sessionStorage.setItem("authorized", authorized);
+
+            console.log(authorized);
+
+
+            if (authorized) {
+                document.getElementById("admin").style.display = "block";
+            }
+
+            else {
+                document.getElementById("admin").style.display = "none";
+            }
+            
+
+            })
+            .catch(error => console.error(error));
       
   })
 
 }
+
 </script>
