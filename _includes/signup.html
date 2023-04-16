@@ -2,16 +2,12 @@
     <h1>Sign Up</h1>
     <table>
         <tr>
-            <th>First Name</th>
-            <th><input type="text" id="fname" name="fname" placeholder="enter your first name..."></th>
+            <th>Name</th>
+            <th><input type="text" id="name" name="name" placeholder="enter your name..."></th>
         </tr>
         <tr>
-            <th>Last Name</th>
-            <th><input type="text" id="lname" name="lname" placeholder="enter your last name..."></th>
-        </tr>
-        <tr>
-            <th>Username</th>
-            <th><input type="text" id="username" name="username" placeholder="enter a username..."></th>
+            <th>Email</th>
+            <th><input type="text" id="email" name="email" placeholder="enter your email..."></th>
         </tr>
         <tr>
             <th>Password</th>
@@ -21,6 +17,9 @@
             <th>Confirm Password</th>
             <th><input type="password" id="pswdagain" name="pswdagain" placeholder="re-enter password..."></th>
         </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <input type="text" placeholder="00-00-0000" id="dob" name="enter date of birth..." required>
         <tr>
             <th><button class="btn" type="submit" value="Submit" onclick="checkFields()">Submit</button></th>
         </tr>
@@ -46,13 +45,28 @@
         }
     }
 
-    function signup_user() {
-        const fname = document.getElementById("fname").value;
-        const lname = document.getElementById("lname").value;
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("pswd").value;
+    function signUp(){
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('pswd').value;
+        const dob = document.getElementById('dob').value;
 
-        const url = "https://abopsc-backend.dontntntnt.de/authenticate";
+        const url = "https://abopsc-backend.dontntntnt.de/api/person/post/";
+
+        var details = {
+            'email': email,
+            'password': password,
+            'name': name,
+            'dob': dob
+        };
+
+        var formBody = [];
+        for (var property in details) {
+            var encodedKey = encodeURIComponent(property);
+            var encodedValue = encodeURIComponent(details[property]);
+            formBody.push(encodedKey + "=" + encodedValue);
+        }
+        formBody = formBody.join("&");
         
         const options = {
             method: 'POST', 
@@ -60,35 +74,16 @@
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
             credentials: 'include', // include, *same-origin, omit
             headers: {
-                'Content-Type': 'application/json'
+            // 'Content-Type': 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
             },
-            body: JSON.stringify({
-                "fname"    : fname,
-                "lname"    : lname,
-                "username" : username,
-                "password" : password
-            })
+            body: formBody
         };
 
-
-        // Fetch JWT
         fetch(url, options)
-        .then(response => {
-            // trap error response from Web API
-            if (!response.ok) {
-                const errorMsg = 'Login error: ' + response.status;
-                console.log(errorMsg);
-                return; 
-            }
-            // Success!!!
-            // Redirect to Database location
-
-            var requestOptions = {
-                method: 'GET',
-                redirect: 'follow'
-            };
-            
-        })
-
-    }
+            .then(response => console.log(response.text()))
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+        
+        }
 </script>
