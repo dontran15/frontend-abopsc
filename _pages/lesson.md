@@ -25,9 +25,39 @@ Car honda = new Car ("Honda," "10," "54.6") --> constructor
 - Inside the parentheses --> parameters which are values passed
 - Car (String brand, int age, double mpg)
 - If you want to overload a constructor, you can have the same characteristics but different order of variables. For example, Car (double mpg, String brand, int age)
-### Unit 3
-- Now that we understand the characteristics of each car, it is time to make a purchase. One of the most important considerations is price.
-- We can use conditional statements to eliminate cars without the chosen characteristics. If statements only run if the given condition is true. For example, if you only want black cars you can use the if statement to filter for that and only keep the car in consideration if color=black. Additionally, we can use if statements to find the cheapest car that fits all the chosen characteristics, or only show certain cars if they are within a certain price range.
+# Unit 3
+Continuing the cars theme, we are going to explore Unit 3 which includes topics like boolean expressions, if statements, control flow, if-else statements, else-if statements, compound boolean expressions, equivalent boolean expressions, and comparing objects. This is roughly 15%-17.5% of the AP Exam. 
+
+Just like how cars have different conditions or states, we can use boolean expressions in Java to represent conditions that evaluate to either true or false. For example, we can have a boolean expression that checks if a car's engine is running or if its speed is greater than a certain threshold.
+
+![boolean](/images/boolean.png)
+
+In Java, we can use boolean operators like && (and), || (or), and ! (not) to create compound boolean expressions that combine multiple conditions. These operators allow us to create more complex conditions for making decisions in our code.
+![compound boolean](/images/compound.png)
+
+One common use of boolean expressions is in if statements, which allow us to execute different blocks of code depending on whether a condition is true or false. For example, we can use an if statement to check if a car's engine is running, and if it is, we can perform actions like accelerating or decelerating the car.
+
+![ifelse](/images/ifelseboolean.png)
+
+We can also use if-else statements to specify different blocks of code to be executed when a condition is true or false. This allows us to handle both cases in our code. For example, we can use an if-else statement to check if a car's speed is above a certain limit, and if it is, we can display a warning message.
+
+![ifelseint](/images/ifelseint.png)
+
+Another expression that we can use is else-if statements in Java to check multiple conditions sequentially until one of them is true. This allows us to handle different cases in our code. For example, we can use else-if statements to check the weather condition and adjust the car's driving mode accordingly.
+
+![elseif](/images/elseif.png)
+It's important to note that equivalent boolean expressions can be used interchangeably in our code. For example, we can use == or .equals() to compare objects of certain types, such as strings or other objects, in our boolean expressions.
+![equivalent](/images/equivalentboolean.png)
+
+Lastly, we can use object comparison to compare objects based on their references. In Java, objects are compared using the == operator, which compares the memory addresses of the objects. For example, we can use object comparison to check if two cars are the same object or not.
+![comparing](/images/comparingobjects.png)
+
+You can also use the equals method which is denoted by equals() to compare two objects.
+
+![comparing](/images/equals.png)
+
+Key to note is the use of truth tables. Oftentimes, if you want to visualize the possible outcomes of different combinations of boolean values and logical operators, and use them to evaluate the overall result of a boolean expression.
+
 ### Unit 4
 - While loops keep repeating the code as long as a condition is true. while (i < numberOfRepetitions) { do something i++; }. The while loop can be used to check every single car in consideration to see if it fits all the criteria. It will go through every single car in the list and then you can add a nested if statement that checks if the criteria is met. With the while loop, all the cars can be checked. 
 
