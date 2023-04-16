@@ -13,10 +13,22 @@ permalink: /lesson/
 
 ## Lesson
 ### Unit 1
-- You are a teenager who has their license and wants to find a car to buy. When you go to the car dealership, you realize that there are many different things you have to keep track of. You have to keep track of the car brands you look at, the prices of the cars, phone numbers of different sales representatives, etc. To make it easy on yourself, you want to develop a computerized code that is able to sort through different prices, car brands, etc. The first step to doing this is through storing these different variables just mentioned as data types - primitive data types. You use variables to store data in Java. 
-- For example, the price of a car can be stored as a double. The car brands you look and phone numbers can be strings. If you want to store whether you like a car or not, you can store that information as a boolean data type. 
-- Now that you have data and variables declared, you can also compare prices of different cars through expressions and assignment statements. There are operators like the modulo operator where the remainder is computed or there's division and multiplication. If you ever want to compare car prices, you can set up a code with scanner input which is also a very common with consoles.
-- Start Hack 1.
+Set the scene: you are a teenager who has their license and wants to find a car to buy. When you go to the car dealership, you realize that there are many different things you have to keep track of. You have to keep track of the car brands you look at, the prices of the cars, phone numbers of different sales representatives, etc. 
+
+To make it easy on yourself, you want to develop a computerized code that is able to sort through different prices, car brands, etc. 
+
+The first step to doing this is through storing these different variables just mentioned as data types - primitive data types. You use variables to store data in Java. Types of primitive data include integers, doubles, booleans, etc.
+
+Now, there are so many things you need to make when buying a car: price, brand, milage, color, etc. We can set the price of a car can be stored as a double, the car brand as a strings. If you want to store whether you like a car or not, you can store that information as a boolean data type. 
+
+Now that you have data and variables declared, you can also compare prices of different cars through expressions and assignment statements. we will go more in depth about boolean comparison statement in Unit 3. Casting, the assignment of one data type to another, can be used for rounding. This can make prices more customer-friendly and easier to compare.
+
+There are operators like the modulo operator where the remainder is computed or there's division and multiplication. If you ever want to compare car prices, you can set up a code with scanner input which is also a very common with consoles.
+
+image
+
+We can also use compound operators which follows the form a += 1 or age ++ in order to indicate a = a + 1. For example, if you want to model the amount of cars that have entered the highway. Each time the light turns green the number of cars is car += 2.
+
 ### Unit 2
 - Now that Hack 1 we have practically covered Unit 1 of AP computer science that involves primitive data types and operators (both simple and compound)
 - When you want to characterize all the cars, you can create a class or a template that basically defines what an object is like and what the object can do
