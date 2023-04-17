@@ -95,7 +95,7 @@ Key to note is the use of truth tables. Oftentimes, if you want to visualize the
 
 # Unit 4
 
-Now oimagine you're a car mechanic, and you have a long list of cars waiting to be fixed. Instead of manually fixing each car one by one, you want to use a loop to efficiently go through the list. This is where a while loop comes in handy.
+Now imagine you're a car mechanic, and you have a long list of cars waiting to be fixed. Instead of manually fixing each car one by one, you want to use a loop to efficiently go through the list. This is where a while loop comes in handy.
 A while loop is used when you want to repeat a block of code as long as a certain condition is true. For example, you can use a while loop to fix cars in your list until there are no more cars left. 
 
 INSERT CODE
@@ -104,11 +104,11 @@ Some issues with while loops is that if the loop condition is always true, the l
 
 Break and continue statements help loops. Break statement will help immediately exit out of the loop. Continue statement jumps to the next iteration. 
 
-There's also try-catch staetment blocks and excepion throwing. Exceptions are signs that something is wrong with the code at runtime and the try-catch statements helps keep the program from crashing. The program tries to run the code assuming it works in the try block and if it catches an exception, it moves to the catch block. Then, there is a finally block that runs afterwards no matter what the try or catch blocks say.
+There's also try-catch statement blocks and exception throwing. Exceptions are signs that something is wrong with the code at runtime and the try-catch statements helps keep the program from crashing. The program tries to run the code assuming it works in the try block and if it catches an exception, it moves to the catch block. Then, there is a finally block that runs afterwards no matter what the try or catch blocks say.
 
 INSERT CODE 
 
-Now, let's say you have a different list of cars, and you know exactly how many cars are in the list. You want to iterate through the list a specific number of times to perform a certain task on each car. This is where a for loop can be very useful. A common example is often fibbonaci's numbers. 
+Now, let's say you have a different list of cars, and you know exactly how many cars are in the list. You want to iterate through the list a specific number of times to perform a certain task on each car. This is where a for loop can be very useful. A common example is often fibonaci's numbers. 
 
 INSERT CODE
 
