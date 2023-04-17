@@ -30,13 +30,31 @@ image
 We can also use compound operators which follows the form a += 1 or age ++ in order to indicate a = a + 1. For example, if you want to model the amount of cars that have entered the highway. Each time the light turns green the number of cars is car += 2.
 
 ### Unit 2
-- Now that Hack 1 we have practically covered Unit 1 of AP computer science that involves primitive data types and operators (both simple and compound)
-- When you want to characterize all the cars, you can create a class or a template that basically defines what an object is like and what the object can do
-- When it comes to cars, you can create a class for what the car is like. The class Cars can have variables like String brand, int age, double mpg. With these parameters, you can create an actual object. 
-Car honda = new Car ("Honda," "10," "54.6") --> constructor
-- Inside the parentheses --> parameters which are values passed
-- Car (String brand, int age, double mpg)
-- If you want to overload a constructor, you can have the same characteristics but different order of variables. For example, Car (double mpg, String brand, int age)
+
+Unit 2 mostly focuses on objects, classes, methods, and constructors.
+
+In order to use the data you need to first create a class. In this class, you can then create objects and methods to access the data.
+
+An object is a reference type and can be used to access data. A constructor makes data that is stored in an object. For example, I can make a car object and create a constructor that includes different characteristics of the car such as its brand, color, price, and milage. 
+
+INSERT CODE
+
+You can also use methods to make the object perform certain actions. The method includes the scope which indicates if it is public or private allowing other classes/objects to access it or not. There is also the return type. Void does not return any data. Next is the name of the method which usually describes its action. The parameters include what variables are included in the method. Finally, the body actually performs the action. 
+
+INSERT PIC
+
+The method can compare the price of two cars for example. You can create code that outputs the cheaper car when entering the name of the two cars.
+
+INSERT CODE
+
+It is also important to learn about the math classes. They perform common mathematical functions such as absolute value, exponent power, square root, random number generation, etc. 
+
+If acceleration is an important factor in deciding which car you want, absolute value may be important. The car can constantly display your acceleration speed no mater if you are going forward or backward.
+
+Maybe there is a whole registry of cars and you do not want to search though each one. Use the random function to randomly display a car and its characteristics to see if it is the right fit.
+
+
+
 # Unit 3
 
 Continuing the cars theme, we are going to explore Unit 3 which includes topics like boolean expressions, if statements, control flow, if-else statements, else-if statements, compound boolean expressions, equivalent boolean expressions, and comparing objects. This is roughly 15%-17.5% of the AP Exam. 
