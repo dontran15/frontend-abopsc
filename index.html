@@ -6,7 +6,8 @@ author_profile: true
 
 <h1>
     <div id="user"></div>
-    <div id="loginMessage"></duv>
+    <div id="loginMessage"></div>
+    <div id="authorized"></div>
 </h1>
 <script>
     if (sessionStorage.getItem("username") == null) {
@@ -16,6 +17,8 @@ author_profile: true
         sessionStorage.setItem("authorized", false);
     }
     document.getElementById("user").innerHTML = "Hello " + sessionStorage.getItem("username") + "!";
+    document.getElementById("authorized").innerHTML = "Authorized: " + sessionStorage.getItem("authorized");
+
     if (sessionStorage.getItem("authorized") === "false") {
         document.getElementById("loginMessage").innerHTML = "You are not logged in. Please log in to access the lesson.";
     }
