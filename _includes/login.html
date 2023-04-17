@@ -134,7 +134,7 @@ function logout() {
   sessionStorage.setItem("username", "Guest");
   sessionStorage.setItem("email", null);
   sessionStorage.setItem("authorized", false);
-  window.location.reload();
+  window.location.href = "{{site.baseurl}}/";
 
 }
 
