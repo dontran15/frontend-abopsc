@@ -1,10 +1,20 @@
 <html>
   <body>
-    <div>
+    <div id="navAuthorized">
       <a href="{{ site.url }}{{ site.baseurl }}/lesson/" ><button class="btn">Lesson</button></a>
       <a href="{{ site.url }}{{ site.baseurl }}/labs/"><button class="btn">Lab Work</button></a>
       <a href="{{ site.url }}{{ site.baseurl }}/scores/"><button class="btn">Scoring</button></a>
       <a href="{{ site.url }}{{ site.baseurl }}/playground/"><button class="btn">Playground</button></a>
     </div>
   </body>
+
 </html>
+
+<script>
+if (sessionStorage.getItem("authorized") === "true") {
+  document.getElementById("navAuthorized").style.display = "block";
+}
+else {
+  document.getElementById("navAuthorized").style.display = "none";
+}
+</script>
