@@ -87,7 +87,6 @@ function login_user() {
           sessionStorage.setItem("email", username);
           sessionStorage.setItem("username", text);
           
-          window.location.href = "{{site.baseurl}}/";
         })
         .catch(error => console.log('error', error));
 
@@ -114,6 +113,9 @@ function login_user() {
             else {
                 document.getElementById("admin").style.display = "none";
             }
+
+            window.location.href = "{{site.baseurl}}/";
+
             
 
             })
