@@ -1,44 +1,38 @@
 <div id="login" class="userAuth">
-    <h1>Login</h1>
-    <table>
-        <div id="loggedOut">
-            <tr>
-                <th>Username</th>
-                <th><input autocomplete="off" type="email" id="username" name="username" placeholder="enter your username..."></th>
-            </tr>
-            <tr>
-                <th>Password</th>
-                <th><input autocomplete="off" type="password" id="pswd" name="pswd" placeholder="enter your password..."></th>
-            </tr>
-            <tr>
-                <th><button class="btn" type="submit" value="Submit" onclick="login_user()">Submit</button></th>
-            </tr>
-    
-            <tr>
-                <th> Or <a onclick="signUpPage()">sign up</a> instead.</th>
-            </tr>
-        </div>
-        <div id="loggedIn">
-            <tr>
-                <th><button class="btn" type="submit" onclick="logout()">Logout</button></th>
-            </tr>
-        </div>
+    <table id="credentialsInput">
+        <tr>
+            <th>Username</th>
+            <th><input autocomplete="off" type="email" id="username" name="username" placeholder="enter your username..."></th>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <th><input autocomplete="off" type="password" id="pswd" name="pswd" placeholder="enter your password..."></th>
+        </tr>
+        <tr>
+            <th><button class="btn" type="submit" value="Submit" onclick="login_user()">Submit</button></th>
+        </tr>
 
+        <tr>
+            <th> Or <a onclick="signUpPage()">sign up</a> instead.</th>
+        </tr>
     </table>
+
+    <button id="but_logout" class="btn" type="submit" onclick="logout()">Logout</button>
 </div>
 
 <script>
 
 
-if (sessionStorage.getItem("authorized")) {
-    document.getElementById("loggedIn").style.display = "hidden";
-    document.getElementById("loggedOut").style.visibility = "visible";
+if (sessionStorage.getItem("authorized") === "true") {
+    document.getElementById("but_logout").style.display = "block";
+    document.getElementById("credentialsInput").style.display = "none";
 }
 
 else {
-    document.getElementById("loggedIn").style.visibility = "visible";
-    document.getElementById("loggedOut").style.display = "hidden";
+    document.getElementById("but_logout").style.display = "none";
+    document.getElementById("credentialisInput").style.display = "block";
 }
+
     // show login, hide signup
 function signUpPage() {
     document.getElementById("signup").style.display = "";
