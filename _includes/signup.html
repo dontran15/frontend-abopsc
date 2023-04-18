@@ -85,11 +85,14 @@
     document.getElementById("login").style.display = "";
   }
 
-  // function checkFields() {
-  //     if(document.getElementById("password").value == document.getElementById("passwordagain").value) {
-  //         alert("they match");
-  //     }
-  // }
+  function checkFields() {
+    if (
+      document.getElementById("pswd").value ==
+      document.getElementById("pswdagain").value
+    ) {
+      alert("they match");
+    }
+  }
 
   function signUp() {
     const name = document.getElementById("name").value;
