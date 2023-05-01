@@ -17,6 +17,9 @@ layout: archive
   {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
+  {% for notebook in notebooks %}
+    {% include  %}
+  {% endfor %}
 </div>
 
 {% include paginator.html %}
